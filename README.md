@@ -5,4 +5,4 @@ cwiczenia z github
 
 
 
-kamil )
+kamil poprawa cwiczenia aby nie zapomiec wszystkiego 
