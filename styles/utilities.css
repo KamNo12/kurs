@@ -1,0 +1,61 @@
+
+.container
+{
+    max-width: 1530px;
+    margin:0 auto;
+    padding:20px;
+    
+  
+    
+}
+
+#container1
+{
+    max-width: 1530px;
+    margin:0 auto;
+    padding:20px;
+    background-color: aliceblue;
+  
+    
+}
+.container2{
+    max-width: 1530px;
+    margin:0 auto;
+    padding:20px;
+    background-color: aliceblue;
+  
+    
+}
+.flex
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.grid_3
+{
+    display:grid;
+    grid-template-columns: 20% 65% 15%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.grid_4
+{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(330px,1fr));
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}   
+img
+{
+    width:100%
+}
+
