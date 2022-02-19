@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strona logowania</title>
+
     <link rel="stylesheet" href="styles/form.css">
 </head>
+
 <body>
     <div class="container">
-        
-        <form action="" method="post">
-            
-            <label for="e-mail">Login</label>
-            <input type="text"id="name"name="name">
 
+        <form action="" method="">
+           <div class="email">
+                <label for="email">Login</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="haslo">
             <label for="haslo">Hasło</label>
             <input type="password" id="haslo" name="haslo">
+            </div>
 
-            <button>Zaloguj</button>
+            <div class="btn">
+
+                 <button>Zaloguj</button>
+
+            </div>
 
             <p>Nie masz konta?</p>
             <p>Zapraszamy do <a href="rejestr.html">rejestracji </a></p>
+            <p><a href="reset_hasla.html">Nie pamietam hasła</a></p>
 
 
         </form>
 
 
     </div>
-    
+
 </body>
+
 </html>

@@ -1,10 +1,64 @@
+body {
+	background-image: url("img/hexellence.png");
+	/* Background pattern from Toptal Subtle Patterns */
+}
+.container {
+	display: grid;
+	
+	grid-template-rows:repeat(minmax(5,1fr));
+	align-content: center;
+	background-color: white;
+	padding: 50px;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	-webkit-box-shadow: 3px 3px 30px 5px rgba(204, 204, 204, 1);
+	-moz-box-shadow: 3px 3px 30px 5px rgba(204, 204, 204, 1);
+	box-shadow: 3px 3px 30px 5px rgba(204, 204, 204, 1);
+}
 
-body
+
+ 
+ input[type=email],
+ input[type=password]
+ {
+	 width:300px;
+	 background-color:#efefef;
+	 color:#666;
+	 border:2px solid #ddd;
+	 border-radius:15px;
+	 font-size:20px;
+	 padding:7px;
+	 box-sizing:border-box;
+	 outline:none;
+	 margin-top:10px;
+	 margin-left: 10px;
+ }
+.email,
+.haslo
 {
-    
+	font-size: 24px;
+	text-align: center;
 }
-.container
-{
-    margin-left: auto;
-    margin-right: auto;
-}
+
+  .btn
+  {
+	  
+	  text-align: center;
+  }
+  .btn button
+  {
+	  border-radius: 15px;
+	  padding: 8px;
+	  font-size: 18px;
+	  width:100px;
+	  margin-top: 30px;
+	  border:none;
+	  cursor: pointer;
+	  margin-bottom: 30px;
+  }
+  a{
+	  text-decoration: none;
+	  color:blue;
+  }
