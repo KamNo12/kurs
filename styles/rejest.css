@@ -27,7 +27,20 @@ p >  input
 {
     padding: 10px;   
 }
-
+.left-text
+{
+    margin-left: 15px;
+}
+body>a
+{
+   text-decoration: none;
+   color:black;
+}
+a
+{
+    color:blue;
+    text-decoration: none;
+}
 
 
 
@@ -42,7 +55,6 @@ input[type=submit]
     color:#ca3a28;
 	font-size: 50px;
 }
-
 
 @media screen and (max-width:1200px){
     body

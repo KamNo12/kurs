@@ -4,7 +4,6 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-    
 }
 body {
 	font-family: "DM Sans" sans-serif;
@@ -18,20 +17,18 @@ a {
 	color: black;
 }
 
-.logo{
+.logo {
 	font-size: 24px;
-    letter-spacing: 3px;
+	letter-spacing: 3px;
 }
-.l1
-{
-	color:#ca3a28;
+.l1 {
+	color: #ca3a28;
 	font-size: 50px;
 }
 
-
 .menu {
-	padding:10px 0;
-    margin: 0;
+	padding: 10px 0;
+	margin: 0;
 	width: 100%;
 	background-color: aqua;
 	border-radius: 10px;
@@ -110,8 +107,7 @@ ol > li > ul > li:hover {
 ol > li > ul > li:hover > a {
 	color: red;
 }
-.li1
-{
+.li1 {
 	max-width: 80px;
 }
 
@@ -130,109 +126,204 @@ ol > li > ul > li:hover > a {
 	text-align: center;
 	width: 50%;
 }
-#slider
-{
-    text-align: center;
-    background-color: aliceblue;
-    
+#slider {
+	text-align: center;
+	background-color: aliceblue;
 }
-#slider img
-{
-    width: 800px;
-    height:300px;
+#slider img {
+	width: 800px;
+	height: 300px;
 }
- .product
- {
-	 text-align: center;
-	}
-	.product img
-	{
-	 max-width: 350px;	
-	 box-shadow: 3px 2px 7px 0 rgba(0, 0, 0, 0.4);
-	 height: 280px;
-	 filter:brightness(90%);
-	 transition:all .3s ease-in-out;
-	 
- }
- .product img:hover
- {
-	 cursor: pointer;
-	 filter:brightness(100%);
- }
+.product {
+	text-align: center;
+}
+.product img {
+	max-width: 350px;
+	box-shadow: 3px 2px 7px 0 rgba(0, 0, 0, 0.4);
+	height: 280px;
+	filter: brightness(90%);
+	transition: all 0.3s ease-in-out;
+}
+.product img:hover {
+	cursor: pointer;
+	filter: brightness(100%);
+}
 
- #info
- {
-	 background-color: aliceblue;
-	 padding: 30px;
-	 text-align: justify;
-  
- }
-  #info h3
-  {
-	  text-align: center;
-  }
-  .media
-  {
-	  margin-left: auto;
-	  margin-right: auto;
-	  display: flex;
-	  
-  }
-  
-  .fb
-  {
-	  width: 100px;
-	  background-color:#3b5998;
-	  color: white;
-	  border-radius: 20px;
-	  margin:0 10px;
-	  padding: 5px;
-	  text-align: center;
-	  
-	}
-	
-	.gp
-	{
-	  
-	  width: 100px;
-	  background-color:#db4a39;
-	  color: white;
-	  border-radius: 20px;
-	  margin:0 10px;
-	  padding: 5px;
-	  text-align: center;
+#info {
+	background-color: aliceblue;
+	padding: 30px;
+	text-align: justify;
+}
+#info h3 {
+	text-align: center;
+}
+.media {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 
-	
-	  
-	
+.fb {
+	width: 100px;
+	background-color: #3b5998;
+	color: white;
+	border-radius: 20px;
+	margin: 0 10px;
+	padding: 5px;
+	text-align: center;
+}
 
-  }
-  
+.gp {
+	width: 100px;
+	background-color: #db4a39;
+	color: white;
+	border-radius: 20px;
+	margin: 0 10px;
+	padding: 5px;
+	text-align: center;
+}
 
-.fb:hover
-{
+.fb:hover {
 	background-color: #2a4887;
 	cursor: pointer;
 }
-.gp:hover
-{
-	background-color:#ca3a28; 
+.gp:hover {
+	background-color: #ca3a28;
 	cursor: pointer;
 }
 
-#f2
-{
+#f2 {
 	background-color: black;
 	color: white;
 	text-align: center;
 	padding: 20px;
 }
 
+@media screen and (max-width: 750px) {
+	body {
+		font-family: "DM Sans" sans-serif;
+		line-height: 1.6;
+		justify-content: center;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+	}
 
+	ul {
+		list-style-type: none;
+	}
+	a {
+		text-decoration: none;
+		color: black;
+	}
 
+	.logo {
+		margin-left: 5px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 20px;
+		letter-spacing: 1px;
+	}
+	.l1 {
+		color: #ca3a28;
+		font-size: 30px;
+	}
 
+	
+	.b1 > img{
+		max-width: 100%;
+	}
 
+	.menu {
+		padding: 10px 0;
+		margin: 0;
+		width: 100%;
+		background-color: aqua;
+		border-radius: 10px;
+		text-align: center;
+		display: none;
+	}
+	
+	
 
+	.btn {
+		color: black;
+		background-color: aqua;
+		border: 1px dotted aqua;
+		padding: 10px;
+		border-radius: 10px;
+		cursor: pointer;
+		display: none;
+	}
 
+	.icon {
+		justify-content: center;
+		align-self: center;
+		text-align: center;
+		width: 50%;
+		display: none;
+	}
+	#slider {
+		text-align: center;
+		background-color: aliceblue;
+		
+	}
+	#slider img {
+		
+		max-width: 100%;
+	}
+	
 
+	#info {
+		background-color: aliceblue;
+		padding: 30px;
+		text-align: justify;
+	}
+	#info h3 {
+		text-align: center;
+	}
+	.media {
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+	}
 
+	.fb {
+		width: 100px;
+		background-color: #3b5998;
+		color: white;
+		border-radius: 20px;
+		margin: 0 10px;
+		padding: 5px;
+		text-align: center;
+	}
+
+	.gp {
+		width: 100px;
+		background-color: #db4a39;
+		color: white;
+		border-radius: 20px;
+		margin: 0 10px;
+		padding: 5px;
+		text-align: center;
+	}
+
+	.fb:hover {
+		background-color: #2a4887;
+		cursor: pointer;
+	}
+	.gp:hover {
+		background-color: #ca3a28;
+		cursor: pointer;
+	}
+
+	#f2 {
+		background-color: black;
+		color: white;
+		text-align: center;
+		padding: 20px;
+		margin: 0;
+	}
+}
