@@ -1,14 +1,20 @@
 body
 { 
     text-align: center;
+    background-image: url("../slajdy/slajd1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
 }
+
+
 
 .container
 {   
     background-color:rgba(250, 250,250, 0.9);
     margin-left: auto;
     margin-right: auto;
-    margin-top:50px;
+    margin-top:20px;
+    margin-bottom: 10px;
     padding: 50px;
     width: 500px;
     display: flex; 
@@ -42,11 +48,14 @@ a
     text-decoration: none;
 }
 
-
+.color
+{
+    color:#ca3a28;
+}
 
 input[type=submit]
 {
-    margin-top: 80px;
+    margin-top: 50px;
     padding: 10px;
     width: 150px;
 }
@@ -106,7 +115,8 @@ input[type=submit]
     body
 { 
     text-align: center;
-}   
+} 
+ 
     .container
     {
         background-color:rgba(250, 250,250, 0.9);

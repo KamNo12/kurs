@@ -131,8 +131,8 @@ ol > li > ul > li:hover > a {
 	background-color: aliceblue;
 }
 #slider img {
-	width: 800px;
-	height: 300px;
+	width: 70%;
+	height: 400px;
 }
 .product {
 	text-align: center;

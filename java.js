@@ -3,7 +3,7 @@ window.onload = zmienslajd;
 
 
 
-var numer = Math.floor(Math.random()*3)+1;
+var numer = 1;
 
 function zmienslajd()
 {
