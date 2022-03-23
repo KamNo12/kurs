@@ -1,9 +1,12 @@
 <?php
 session_start();
-if(!isset($_SESSION['username'])){
-    $_SESSION['msg']="Musisz sie najpierw zalogowac";
+if(!isset($_SESSION['log'])||($_SESSION['log']==false)){
     header('Location: zaloguj.php');
+    exit();
 }
+
+   
+
 
 
 
@@ -20,9 +23,10 @@ if(!isset($_SESSION['username'])){
         <h1>zalogowano</h1>
         <?php
 
-echo "<p> witaj".$_SESSION['username'];
+echo "<p> Witaj ".$_SESSION['username']." ".$_SESSION['surname'].'</br>';
+echo "Twój adres email to: ".$_SESSION['email'];
 
-echo '<h1> HELLO'.$_SESSION['username'].'</h1>'.'</br>'.'<a href="logout.php">WYLOGUJ</a>';
+echo '<h1> HELLO '.$_SESSION['username'].'</h1>'.'</br>'.'<a href="logout.php">WYLOGUJ</a>';
 
 ?>
 </body>

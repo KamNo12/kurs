@@ -1,9 +1,10 @@
 <?php
 session_start();
 
- $username='';
- $email='';
+ //$username='';
+ //$email='';
  $errors=array();
+ 
 
  require_once 'connect.php';
 
@@ -39,8 +40,9 @@ session_start();
         $query ="INSERT INTO users(email,name,surname,password) VALUES ('$email','$username','$surname','$password')";
         mysqli_query($db,$query);
         
-        $_SESSION['sukces']="pomyslnie zalogowano";
-        if (time_nanosleep(4, 500000)) {
+        
+        if (time_nanosleep(2, 500000)) {
+       
             header('location:zaloguj.php');
         }
     }
@@ -65,14 +67,22 @@ session_start();
         $query="SELECT * FROM users WHERE email='$email' AND password='$password'";
         
         $results =mysqli_query($db,$query);
-        if(mysqli_num_rows($results)==1){
-           
-          $_SESSION['errors']="zostales pomyslnie zalogowany";
+        $user = mysqli_fetch_assoc($results);
+        $_SESSION['username']=$user['name'];
+        $_SESSION['surname']=$user['surname'];
+        $_SESSION['email']=$user['email'];
+
+        if(mysqli_num_rows($results)==1)
+        { 
+            $_SESSION['log']=true;
             header('location:kamil.php');
-        }else{
+        }
+        else
+        {
             array_push($errors,"zle dane logowania");
         }
     }
+    
  }
  
 

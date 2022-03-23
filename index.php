@@ -10,9 +10,10 @@
         <link rel="stylesheet" href="styles/utilities.css">
         <link rel="stylesheet" href="fontello/css/fontello.css">
         <script src="java.js"></script>
-</head>
-
+    </head>
+    
 <body >
+    <div id="pojemnik">
     <header>
         <nav>
             <div class="container grid_3 flex">
@@ -167,6 +168,7 @@
             </div>
         </div>
     </footer>
+</div>
     
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 </body>

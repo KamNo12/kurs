@@ -1,6 +1,6 @@
 <?php
 include('server.php');
-session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -25,16 +25,14 @@ session_start();
     <div class="container">
         <form action="rejestr.php" method="post">
             <?php include('errors.php'); 
-             if(isset($_SESSION['sukces'])){
-                 echo $_SESSION['sukces'];
-             
-             }
-             ?>
-            <p> <label for="name">Imie</label> <input type="text" name="username" id="username" value="<?php echo $username ?>"> </p>
+            
+            ?>
+            
+            <p> <label for="name">Imie</label> <input type="text" name="username" id="username"> </p>
 
             <p> <label for="surname">Nazwisko</label> <input type="text" name="surname" id="surname"> </p>
 
-            <p><label for="email">E-mail</label> <input type="email" name="email" id="email" value="<?php echo $email; ?>"> </p>
+            <p><label for="email">E-mail</label> <input type="email" name="email" id="email" > </p>
 
             <p> <label for="password">Hasło</label> <input type="password" name="password" id="password"> </p>
 
